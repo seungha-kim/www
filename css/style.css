@@ -37,12 +37,36 @@ body {
 
 /* 링크 스타일 */
 
-a:hover, a:focus {
-  color: #f00;
-}
 a:link, a:visited {
   color: inherit;
   text-decoration: none;
+}
+a:hover, a:focus {
+  color: #f00;
+}
+
+/* 숨김 콘텐츠 */
+
+.readable-hidden, .a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+.a11y:focus {
+  top: 5px;
+  left: 50%;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: rect(auto, auto, auto, auto);
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 /* 공통 스타일 */
@@ -69,37 +93,73 @@ a:link, a:visited {
 .header {
   background-color: #fff;
   position: relative;
+  padding: 0 30px 30px;
+  border-radius: 0 0 15px 15px;
 }
 
 /* 로고 */
 
 .logo {
   position: absolute;
-  top: 45px;
+  top: 48px;
   left: 65px;
 }
 
 /* 멤버 링크 */
 
 .member {
-  background: yellow;
   text-transform: uppercase;
   font-size: 0;
   text-align: right;
+  transform: translateX(10px);
 }
 .member li {
-  background: aqua;
   display: inline-block;
   font-size: 1.4rem;
   padding: 10px 0;
 }
-.member li:nth-child(n+2)::before{
+.member li:nth-child(n+2)::before {
   content: ":"
 }
-.member a{
-  background: lime;
+.member a {
   padding: 8px 10px;
 }
+
+/* 메인 메뉴 */
+
+.main-menu {
+  background: linear-gradient(to bottom, #f4bd30 0%, #ed802d 35%, #ed802d 70%, #f4bd30 100%);
+  background-color: #ed802d;
+  border-top: 2px solid #000;
+  border-radius: 0 0 5px 5px;
+  height: 47px;
+  padding-left: 225px;
+}
+.main-menu>li {
+  float: left;
+  line-height: 45px;
+}
+.main-menu span {
+  display: block;
+  font-size: 1.6rem;
+  font-family: "Noto Sans Bold";
+  color: #fff;
+  padding: 0 20px;
+  cursor: pointer;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.main-menu span:hover, .main-menu>li:focus span {
+  color: #ff0;
+}
+.sub-menu {
+  background: yellow;
+  position: absolute;
+  display: none;
+}
+
+/* 비주얼 */
+
 .visual {
   background-color: pink;
   height: 120px;
