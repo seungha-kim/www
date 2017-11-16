@@ -162,31 +162,33 @@ a:hover, a:focus {
   color: #ff0;
 }
 .sub-menu {
-  background: yellow;
   position: absolute;
   top: 47px;
   white-space: nowrap;
+  display: none;
+}
+.menu-act {
+  display: block !important;
 }
 .about-html {
-  display: block;
+  left: 0;
 }
 .about-css {
-  display: none;
+  left: 0;
 }
 .web-standards {
-  display: none;
+  left: 0;
 }
 .web-accessibility {
-  display: none;
+  right: 0;
 }
 .qna {
-  display: none;
+  right: 0;
 }
 .archive {
-  display: none;
+  right: 0;
 }
 .sub-menu li, .sub-menu a {
-  background: aqua;
   display: inline-block;
 }
 .sub-menu a {
