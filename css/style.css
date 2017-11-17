@@ -153,12 +153,12 @@ a:hover, a:focus {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
-.main-menu span:hover::after, .main-menu>li:focus span::after {
+.main-menu>li:hover span::after, .main-menu>li:focus span::after {
   content: "";
   display: block;
   border-top: 2px solid #000;
 }
-.main-menu span:hover, .main-menu>li:focus span {
+.main-menu>li:hover span, .main-menu>li:focus span {
   color: #ff0;
 }
 .sub-menu {
