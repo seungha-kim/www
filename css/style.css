@@ -350,6 +350,54 @@ a:hover, a:focus {
   padding: 8px 0;
 }
 
+/* 유효성 검사 배너 */
+
+.validation {
+  margin-top: 20px;
+}
+.validation-list a {
+  display: block;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+  height: 33px;
+  line-height: 30px;
+  border-radius: 20px;
+  padding-left: 45px;
+  background: url("images/validation_icon.png") no-repeat 15px 50%, linear-gradient(to bottom, #ccc, #eee);
+}
+
+/* 웹 관련 용어 */
+
+.term {
+  background: linear-gradient(to bottom, #eee, #ccc);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+.term-heading {
+  font-family: "Noto Sans Bold";
+  font-size: 1.5rem;
+}
+.term-list {
+  margin-top: 10px;
+}
+.term-list-heading {
+  width: 145px;
+  float: right;
+  font-weight: bold;
+  color: #296897;
+}
+.term-list-thumbnail {
+  width: 60px;
+  float: left;
+}
+.term-list-brief {
+  width: 145px;
+  float: right;
+  margin-top: 5px;
+}
+
 /* 슬로건 */
 
 .slogan {
