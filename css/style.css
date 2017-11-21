@@ -376,26 +376,142 @@ a:hover, a:focus {
   margin-top: 20px;
 }
 .term-heading {
-  font-family: "Noto Sans Bold";
   font-size: 1.5rem;
+  font-family: "Noto Sans Bold";
 }
 .term-list {
   margin-top: 10px;
 }
-.term-list-heading {
-  width: 145px;
+.term-list-heading, .term-list-brief {
   float: right;
-  font-weight: bold;
-  color: #296897;
+  width: 145px;
 }
-.term-list-thumbnail {
-  width: 60px;
-  float: left;
+.term-list-heading {
+  color: #296897;
+  font-weight: bold;
+  margin-top: -5px;
 }
 .term-list-brief {
-  width: 145px;
-  float: right;
   margin-top: 5px;
+  line-height: 1.5;
+  word-break: break-all;
+}
+.term-list-thumbnail {
+  float: left;
+}
+.term-list dt:nth-of-type(2n+2), .term-list dd:nth-of-type(4n+4) {
+  float: left;
+}
+.term-list dd:nth-of-type(4n+3) {
+  float: right;
+}
+
+/* 검색 폼 */
+
+.search {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 15px 15px 0 0;
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  padding: 15px 25px 10px;
+}
+.search-form label::before {
+  content: '\e800';
+  font-family: "fontello";
+  margin-right: 3px;
+}
+.search-form input[type="search"] {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 2px 2px 2px 5px;
+  width: calc(100% - 125px);
+}
+.search-form input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #f00;
+}
+.search-form input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #f00;
+}
+.search-form input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #f00;
+}
+.search-form input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #f00;
+}
+.btn-search {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 0 10px;
+  color: #fff;
+  background: #333 linear-gradient(to top, #666, #333);
+}
+
+/* 공지사항 및 자료실 */
+
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+.notice-heading, .pds-heading {
+  position: absolute;
+  top: 0;
+  color: #666;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+.board-act .notice-heading, .board-act .pds-heading {
+  background: #fff;
+  color: #ed802d;
+  border-color: #ed802d;
+  border-bottom-color: #fff;
+}
+.notice-heading {
+  left: 0;
+}
+.pds-heading {
+  left: 83px;
+}
+.notice-list, .pds-list {
+  padding: 40px 0 0 20px;
+  list-style: square;
+}
+.notice-list li, .pds-list li {
+  margin: 5px 0;
+}
+.notice-list a, .pds-list a {
+  width: 285px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notice-list time, .pds-list time {
+  float: right;
+}
+.notice-more, .pds-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+.notice-more::before, .pds-more::before {
+  content: '\e802';
+  font-family: "fontello";
+  color: hsla(90, 90%, 30%, 1);
+  margin-right: 5px;
+}
+.notice-list, .pds-list, .notice-more, .pds-more {
+  display: none;
+}
+.board-act ul, .board-act>a {
+  display: block;
 }
 
 /* 슬로건 */
