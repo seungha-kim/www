@@ -564,6 +564,32 @@ a:hover, a:focus {
   margin-bottom: 15px;
   box-shadow: 0 15px 15px 2px #aaa;
 }
+
+/* CSS Grid Layout
+.news-item {
+  background: yellow;
+  margin-top: 30px;
+  display: grid;
+  grid-template: 20px 20px 1fr / 130px 1fr;
+  grid-template-areas: "thumbnail      headline" "thumbnail      time" "thumbnail          brief";
+}
+.news-item h3 {
+  background: lime;
+  grid-area: headline;
+}
+.news-item time {
+  background: orange;
+  grid-area: time;
+}
+.news-item p {
+  background: skyblue;
+  grid-area: brief;
+}
+.news-item figure {
+  background: pink;
+  grid-area: thumbnail;
+} */
+
 .news-more {
   position: absolute;
   top: -8px;
