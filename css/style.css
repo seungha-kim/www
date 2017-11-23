@@ -676,6 +676,17 @@ a:hover, a:focus {
   padding-left: 2em;
 }
 
+/* 인기 사이트 */
+
+.favorite {
+  background: yellow;
+  margin-top: 20px;
+}
+.favorite-list {
+  background: pink;
+  overflow: hidden;
+}
+
 /* 슬로건 */
 
 .slogan {
