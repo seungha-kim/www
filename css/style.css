@@ -603,6 +603,79 @@ a:hover, a:focus {
   margin-right: 5px;
 }
 
+/* 신규 이벤트 */
+
+.event-related {
+  background: #ccc linear-gradient(to bottom, #eee, #ccc);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.event {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+.event-heading, .related-heading {
+  font-family: "Noto Sans Bold", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.event-heading span, .related-heading span {
+  color: #ed802d;
+}
+.event p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.event img {
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+.btn-event {
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+.btn-event button {
+  float: left;
+  width: 19px;
+  height: 18px;
+  padding-top: 18px;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url("images/back_forward.png");
+  background-repeat: no-repeat;
+}
+.btn-event-next {
+  margin-left: 5px;
+  background-position: 100% 0;
+}
+
+/* 관련 사이트 */
+
+.related {
+  margin-top: 10px;
+}
+.related-list {
+  background: #fff;
+  height: 25px;
+  overflow: hidden;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.related-list:hover, .list-open {
+  height: 145px;
+  padding: 12px 0;
+}
+.related-list li {
+  padding: 0 5px;
+}
+.related-list a {
+  display: block;
+  line-height: 23px;
+  padding-left: 2em;
+}
+
 /* 슬로건 */
 
 .slogan {
